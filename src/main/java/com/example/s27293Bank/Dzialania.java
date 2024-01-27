@@ -37,11 +37,16 @@ public class Dzialania {
 
     public BazaKlientow zrobprzelew(int id, double wartosc){
         if (klientistnieje(id)){
-            Optional<Klient> new klient = findklient(id);
+            double nowe_saldo = 0;
+            int idprzelewu = 123;
+            Klient klient = new Klient(id, );
             double saldo = klient.getsaldo();
             if(saldo > wartosc)
-                klient.setsaldo() = saldo - wartosc;
-            return przelew;
+                nowe_saldo = saldo - wartosc;
+                klient.setsaldo(nowe_saldo);
+                Przelew przelew = new Przelew(idprzelewu,id,wartosc,1 )
+            bazaprzelow.addprzelew(klient);
+            return null;
         }
         return null;
     }

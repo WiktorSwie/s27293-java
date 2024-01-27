@@ -15,7 +15,7 @@ public class Klient {
     public int getid() {
         return id;
     }
-    public double setsaldo() {
+    public double setsaldo(double saldo) {this.saldo = saldo;
         return saldo;
     }
     public double getsaldo() {

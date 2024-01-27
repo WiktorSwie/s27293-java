@@ -3,6 +3,7 @@ public class Przelew {
     
     private int idprzelewu;
     private Klient id;
+
     private double wartosc;
     private Status_przelewu status_przelewu;
     public Przelew(int idprzelewu, Klient id, double wartosc, Status_przelewu status_przelewu) {
