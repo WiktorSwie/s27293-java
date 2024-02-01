@@ -11,4 +11,8 @@ public class Bazaprzelewow {
 
     public List<Przelew> getlistaPrzelewow() {return przelewy;}
     public void addPrzelew(Przelew przelew) {przelewy.add(przelew);}
+
+    public void czystka() {
+        przelewy.clear();
+    }
 }
